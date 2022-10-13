@@ -1,0 +1,165 @@
+@import "../abstract/variables";
+
+.menuFixo {
+    //background-color: rgba(39, 1, 54, 0.678);
+    background-color: $colorDarkGray;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 8px 8px;
+    //backdrop-filter: blur(1px);
+}
+
+header{
+    position:fixed;
+    width: 100%;
+    padding: 1.6rem 3.2rem;
+    z-index: 98;
+    transition: all ease-in-out 300ms;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        
+
+        .btnMenu{
+            width: 3.2rem;
+            height: 3.2rem;
+            z-index: 99;
+
+            background: transparent;
+            background-image: url(../assets/iconMenu.svg);
+            border: none;
+            cursor: pointer;
+            
+        }
+
+        ul{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            
+            li{
+                display: flex;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    font-family: $fontIBM;
+                    font-size: 2.4rem;
+                    font-weight: 200;
+                    color: $colorWhite;
+                }
+            }
+        }
+
+        .socials{
+            gap: 1.6rem;
+            
+            a{
+                svg{
+                    filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.15)) ;
+                }
+            }
+        }
+
+        .menu{
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            padding: 10rem 0;
+            background-color: $colorDarkGray;
+            flex-direction: column;
+            align-items: flex-start;
+            border-radius: 0px 8px 8px 0px;
+
+            opacity: 0;
+            transform: translateX(-5rem);
+            transition: all 300ms;
+
+            li{
+                width: 100%;
+                display: block;
+            }
+
+            a{
+                position: relative;
+                display: block;
+                width: 100%;
+                padding: 1.6rem 3.2rem;
+                transition: all 300ms;
+
+                &:hover{
+                    background-color: $colorDarkPurple;
+                }
+            }
+        }
+    }
+}
+
+.show{
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+@media(min-width:860px){
+    header{
+        nav{
+            .btnMenu{
+                display: none;
+            }
+
+            .menu{
+                position: static;
+                visibility: visible;
+                gap: 3.2rem;
+                padding: 0;
+                background-color: transparent;
+                flex-direction: row;
+                align-items: center;
+                height: fit-content;
+                opacity: 1;
+                border-radius: 0px;
+                transform: translateX(0);
+
+                li{
+                    display: inline;
+                    width: fit-content;
+
+                    a{
+                        padding: 0;
+
+                        &::before{
+                            content: "";
+                            border: 1px solid $colorPurple;
+                            width: 0%;
+                            opacity: 0;
+                            display: block;
+                            
+                            position: absolute;
+                            bottom: -.2rem;
+        
+                            transition: all 300ms;
+                        }
+        
+                        &:hover{
+                            background-color: transparent;
+                            &::before{
+                                width: 100%;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
+
+@media(min-width:1110px){
+    header{
+        padding: 1.6rem 12.8rem;
+    }
+}

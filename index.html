@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bayon&family=IBM+Plex+Sans:wght@200;300;400&family=Poppins:wght@100;200;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script defer src="js/main.js"></script>
+    
+    <title>Wilton Alves- Portfolio</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+    <header id="menu">
+        <nav>
+            <button class="btnMenu"></button>
+
+            <ul class="menu">
+                <li><a href="#hero">Introdução</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#sobreMim">Sobre Mim</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+
+            <ul class="socials">
+                <!--facebook <li>
+                    <a title="Facebook" href=""><svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_311_10)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 16.5893C0 24.544 5.77733 31.1587 13.3333 32.5V20.944H9.33333V16.5H13.3333V12.944C13.3333 8.944 15.9107 6.72267 19.556 6.72267C20.7107 6.72267 21.956 6.9 23.1107 7.07733V11.1667H21.0667C19.1107 11.1667 18.6667 12.144 18.6667 13.3893V16.5H22.9333L22.2227 20.944H18.6667V32.5C26.2227 31.1587 32 24.5453 32 16.5893C32 7.74 24.8 0.5 16 0.5C7.2 0.5 0 7.74 0 16.5893Z" fill="#EEEEEE"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_311_10">
+                    <rect width="32" height="32" fill="white" transform="translate(0 0.5)"/>
+                    </clipPath>
+                    </defs></svg>
+                    </a>
+                </li> -->
+
+                <!--yt <li>
+                    <a title="YouTube" href=""><svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.5647 16.2328L14.9711 14.556C14.6575 14.4104 14.3999 14.5736 14.3999 14.9208V18.0792C14.3999 18.4264 14.6575 18.5896 14.9711 18.444L18.5631 16.7672C18.8783 16.62 18.8783 16.38 18.5647 16.2328ZM15.9999 1.14C7.51669 1.14 0.639893 8.0168 0.639893 16.5C0.639893 24.9832 7.51669 31.86 15.9999 31.86C24.4831 31.86 31.3599 24.9832 31.3599 16.5C31.3599 8.0168 24.4831 1.14 15.9999 1.14ZM15.9999 22.74C8.13749 22.74 7.99989 22.0312 7.99989 16.5C7.99989 10.9688 8.13749 10.26 15.9999 10.26C23.8623 10.26 23.9999 10.9688 23.9999 16.5C23.9999 22.0312 23.8623 22.74 15.9999 22.74Z" fill="#EEEEEE"/></svg>   
+                    </a>
+                </li> -->
+
+                <li>
+                    <a title="Instagram" target="_blank" href="https://www.instagram.com/AmajikiWill/ "><svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.7999 16.5C20.7999 17.773 20.2942 18.9939 19.394 19.8941C18.4938 20.7943 17.2729 21.3 15.9999 21.3C14.7269 21.3 13.506 20.7943 12.6058 19.8941C11.7056 18.9939 11.1999 17.773 11.1999 16.5C11.1999 16.2264 11.2287 15.9592 11.2783 15.7H9.59989V22.0952C9.59989 22.54 9.95989 22.9 10.4047 22.9H21.5967C21.8099 22.8996 22.0142 22.8146 22.1647 22.6637C22.3153 22.5128 22.3999 22.3084 22.3999 22.0952V15.7H20.7215C20.7711 15.9592 20.7999 16.2264 20.7999 16.5ZM15.9999 19.7C16.4202 19.6999 16.8364 19.617 17.2247 19.456C17.613 19.2951 17.9658 19.0592 18.263 18.7619C18.5601 18.4646 18.7958 18.1117 18.9566 17.7234C19.1173 17.335 19.2 16.9187 19.1999 16.4984C19.1998 16.0781 19.1169 15.6619 18.9559 15.2736C18.795 14.8853 18.5591 14.5325 18.2618 14.2353C17.9645 13.9382 17.6116 13.7025 17.2232 13.5417C16.8349 13.381 16.4186 13.2983 15.9983 13.2984C15.1494 13.2986 14.3353 13.636 13.7352 14.2365C13.1351 14.8369 12.7981 15.6511 12.7983 16.5C12.7985 17.3489 13.1359 18.163 13.7364 18.7631C14.3368 19.3632 15.151 19.7002 15.9999 19.7ZM19.8399 13.14H21.7583C21.8857 13.14 22.008 13.0895 22.0983 12.9995C22.1885 12.9095 22.2395 12.7874 22.2399 12.66V10.7416C22.2399 10.6139 22.1892 10.4914 22.0988 10.4011C22.0085 10.3107 21.886 10.26 21.7583 10.26H19.8399C19.7122 10.26 19.5897 10.3107 19.4993 10.4011C19.409 10.4914 19.3583 10.6139 19.3583 10.7416V12.66C19.3599 12.924 19.5759 13.14 19.8399 13.14ZM15.9999 1.14C11.9262 1.14 8.01929 2.75828 5.13873 5.63884C2.25817 8.5194 0.639893 12.4263 0.639893 16.5C0.639893 20.5737 2.25817 24.4806 5.13873 27.3612C8.01929 30.2417 11.9262 31.86 15.9999 31.86C18.017 31.86 20.0144 31.4627 21.8779 30.6908C23.7415 29.9189 25.4347 28.7875 26.8611 27.3612C28.2874 25.9349 29.4188 24.2416 30.1907 22.378C30.9626 20.5145 31.3599 18.5171 31.3599 16.5C31.3599 14.4829 30.9626 12.4855 30.1907 10.622C29.4188 8.75842 28.2874 7.06515 26.8611 5.63884C25.4347 4.21253 23.7415 3.08112 21.8779 2.30921C20.0144 1.5373 18.017 1.14 15.9999 1.14ZM23.9999 22.7224C23.9999 23.7 23.1999 24.5 22.2223 24.5H9.77749C8.79989 24.5 7.99989 23.7 7.99989 22.7224V10.2776C7.99989 9.3 8.79989 8.5 9.77749 8.5H22.2223C23.1999 8.5 23.9999 9.3 23.9999 10.2776V22.7224Z" fill="#EEEEEE"/></svg>     
+                    </a>
+                </li>
+
+                <li>
+                    <a title="Behance" target="_blank" href="https://www.behance.net/wilalves"><svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.9297 14.6038C13.221 14.3929 13.3616 14.0446 13.3616 13.5658C13.3717 13.3382 13.3248 13.1138 13.2243 12.9096C13.1339 12.7455 13 12.6083 12.8359 12.5112C12.6658 12.408 12.4769 12.3397 12.2801 12.3103C12.0658 12.2701 11.8482 12.25 11.6339 12.2533H9.28013V14.9219H11.8281C12.2667 14.9252 12.6384 14.8181 12.9297 14.6038V14.6038ZM13.3248 17.0145C12.9967 16.7634 12.558 16.6395 12.0123 16.6395H9.27344V19.7868H11.9587C12.2098 19.7868 12.4408 19.7634 12.6652 19.7165C12.8774 19.675 13.0797 19.5932 13.2612 19.4754C13.4319 19.365 13.5692 19.2143 13.673 19.0201C13.7734 18.8259 13.8237 18.5781 13.8237 18.2801C13.8237 17.6875 13.6562 17.269 13.3248 17.0145V17.0145ZM16 1C7.71652 1 1 7.71652 1 16C1 24.2835 7.71652 31 16 31C24.2835 31 31 24.2835 31 16C31 7.71652 24.2835 1 16 1ZM18.8962 10.606H23.5301V11.7344H18.8962V10.606ZM16 19.9107C15.7833 20.3221 15.4738 20.6775 15.096 20.9487C14.7009 21.2232 14.2623 21.4241 13.7969 21.5413C13.31 21.6718 12.8077 21.736 12.3036 21.7321H6.75893V10.3114H12.1496C12.6953 10.3114 13.1908 10.3616 13.6429 10.4554C14.0915 10.5491 14.4732 10.7098 14.7946 10.9275C15.1127 11.1451 15.3638 11.4364 15.5413 11.798C15.7154 12.1562 15.8058 12.6049 15.8058 13.1373C15.8058 13.7132 15.6752 14.1886 15.4141 14.5737C15.1496 14.9587 14.7679 15.2701 14.2489 15.5145C14.9554 15.7154 15.4743 16.0737 15.8158 16.5759C16.1641 17.0848 16.3348 17.6942 16.3348 18.4107C16.3348 18.9933 16.2243 19.4922 16 19.9107ZM25.3348 18.1429H19.3616C19.3616 18.7924 19.5859 19.4152 19.9241 19.75C20.2656 20.0815 20.7545 20.2489 21.394 20.2489C21.856 20.2489 22.2478 20.1317 22.5826 19.9007C22.9141 19.6696 23.115 19.4252 23.1886 19.1708H25.1908C24.8694 20.1652 24.3806 20.875 23.7176 21.3036C23.0614 21.7321 22.2578 21.9464 21.3237 21.9464C20.6708 21.9464 20.0848 21.8393 19.5592 21.635C19.0536 21.4375 18.5982 21.1362 18.2232 20.7478C17.8535 20.3489 17.5677 19.8798 17.3828 19.3683C17.1786 18.8025 17.0781 18.2065 17.0848 17.6071C17.0848 16.9877 17.1886 16.4118 17.3895 15.8761C17.7746 14.8348 18.5748 14.0011 19.596 13.5692C20.1417 13.3415 20.7277 13.2277 21.3203 13.2344C22.0234 13.2344 22.6328 13.3683 23.1618 13.6429C23.6711 13.905 24.1133 14.2808 24.4542 14.7411C24.7924 15.1998 25.0301 15.7221 25.1808 16.3114C25.3248 16.8906 25.375 17.5 25.3348 18.1429V18.1429ZM21.25 14.942C20.8884 14.942 20.5837 15.0056 20.3493 15.1295C20.115 15.2533 19.9208 15.4074 19.7734 15.5848C19.6331 15.7562 19.5294 15.9544 19.4687 16.1674C19.4152 16.3449 19.3783 16.5257 19.365 16.7098H23.0647C23.0112 16.1306 22.8103 15.702 22.5424 15.4007C22.2612 15.1027 21.8092 14.942 21.25 14.942V14.942Z" fill="#EEEEEE"/></svg> 
+                    </a>
+                </li>
+
+                <li>
+                    <a title="Twitter" target="_blank" href="https://twitter.com/iHunterArt"> <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 1C7.71652 1 1 7.71652 1 16C1 24.2835 7.71652 31 16 31C24.2835 31 31 24.2835 31 16C31 7.71652 24.2835 1 16 1ZM23.2087 12.3069C23.2187 12.4643 23.2187 12.6283 23.2187 12.7891C23.2187 17.7042 19.4754 23.3661 12.635 23.3661C10.5257 23.3661 8.57031 22.7533 6.92299 21.6987C7.22433 21.7321 7.51228 21.7455 7.82031 21.7455C9.56138 21.7455 11.1618 21.1562 12.4375 20.1585C10.8036 20.125 9.4308 19.0536 8.96205 17.5804C9.5346 17.6641 10.0502 17.6641 10.6395 17.5134C9.79819 17.3425 9.04199 16.8855 8.49938 16.2203C7.95678 15.555 7.66123 14.7223 7.66295 13.8638V13.817C8.15513 14.0949 8.73437 14.2656 9.3404 14.2891C8.83095 13.9495 8.41314 13.4895 8.12403 12.9499C7.83493 12.4102 7.68345 11.8075 7.68304 11.1953C7.68304 10.5022 7.86384 9.86942 8.18862 9.32031C9.12244 10.4699 10.2877 11.4101 11.6087 12.0798C12.9297 12.7495 14.3768 13.1338 15.856 13.2076C15.3304 10.6797 17.2187 8.63393 19.4888 8.63393C20.5603 8.63393 21.5246 9.08259 22.2042 9.8058C23.0446 9.64844 23.8482 9.3337 24.5647 8.91183C24.2868 9.77232 23.7042 10.4989 22.9308 10.9576C23.6808 10.8772 24.404 10.6696 25.0737 10.3783C24.5681 11.1217 23.9353 11.7813 23.2087 12.3069V12.3069Z" fill="#EEEEEE"/>
+                        </svg>
+                        
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero " id="hero">
+        <div class="animate__animated animate__slideInUp animate__slow">
+            <h1>Wilton Alves</h1>
+
+            <h4>Designer e desenvolvedor front-end.<br> Crie o seu projeto comigo agora mesmo! </h4>
+
+            <a class="btnPrincipal" href="#projetos">Veja Mais</a>
+        </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+        <div class="title">
+            <h5>Projetos</h5>
+            <span></span>
+        </div>
+
+        <h3>Confira alguns dos principais projetos em que trabalhei.</h3>
+
+        <div class="cards">
+            <a class="card" target="_blank" href="https://www.behance.net/gallery/154410217/Thumbnails/modules/871292205"> 
+                <img src="assets/capaProjetos.png" alt="">
+
+                <h6>Design</h6>
+
+                <h2>Thumbnails</h2>
+            </a>
+
+            <a class="card" target="_blank" href="https://www.behance.net/gallery/154552435/Overlay-CoachGnarg-(Twitch)/modules/872102497">
+                <img src="assets/capaProjetos2.png" alt="">
+
+                <h6>Design</h6>
+
+                <h2>StreamPack CoachGnarg</h2>
+            </a>
+
+            <a class="card" target="_blank" href="https://www.behance.net/gallery/154772035/Site-Pessoal/modules/873341629">
+                <img src="assets/capaProjetos3.png" alt="">
+
+                <h6>Design | Programação</h6>
+
+                <h2>Site Pessoal</h2>
+            </a>    
+        </div>
+        
+        <div class="containerVejaMais"><a class="vejaMais" target="_blank" href="https://www.behance.net/wilalves">Veja mais projetos</a></div>
+    </section>
+
+    <section class="sobreMim" id="sobreMim">
+        <div class="title">
+            <h5>Sobre Mim</h5>
+            <span></span>
+        </div>
+
+        <h3>Dê uma breve olhada em quem eu sou e o que eu faço.</h3>
+
+        <div>
+            <article>
+                <p>Meu nome é Wilton Alves Medina. Tenho 22 anos, moro no estado de Goiás, Brasil. Sou designer e desenvolvedor font-end.</p>
+
+                <p>Estudo design a 7 anos e front-end a 4 meses.</p>
+
+                <p>Sou apaixonado por design gráfico e afins. Desde o começo sempre estudei e usei o Adobe Photoshop, porém a 
+                pouco tempo conheci o front-end, então decidi me aprofundar mais no assunto e estou adorando estudar sobre e evoluir nessa área.
+                </p>
+
+                <h6>Tecnologias que eu uso</h6>
+
+                <div class="tec">
+                    <span><img src="assets/iconFigma.svg" alt=""></span>
+                    <span><img src="assets/iconPS.svg" alt=""></span>
+                    <span><img src="assets/iconHtml.svg" alt=""></span>
+                    <span><img src="assets/iconCss.svg" alt=""></span>
+                    <span><img src="assets/iconSass.svg" alt=""></span>
+                    <span><img src="assets/iconJs.svg" alt=""></span>
+                </div>
+            </article>
+
+            <img src="assets/eu.jpg" alt="">
+        </div>
+
+    </section>
+
+    <section class="contatos" id="contatos">
+        <div class="title">
+            <h5>Contatos</h5>
+            <span></span>
+        </div>
+
+        <h3>Não hesite em contactar-me através das redes sociais ou por e-mail em: <a href="mailto:wiltonalvesmedina@gmail.com">Wiltonalvesmedina@gmail.com</a>, independentemente do assunto.</h3>
+
+    </section>
+
+    <section class="backfoot">
+        <div>
+            <a target="_blank" href="https://github.com/WilAlvesMedina">Github</a>
+
+            <!-- <a target="_blank" href="">Dribble</a> -->
+
+            <a target="_blank" href="https://www.linkedin.com/in/wilalvesmedina/">LinkedIn</a>
+        </div>
+
+        <span>© Wilton Alves</span>
+    </section>
+    
+</body>
+</html>

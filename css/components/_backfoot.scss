@@ -1,0 +1,71 @@
+@import "../abstract/variables";
+
+.backfoot{
+    padding: 0 3.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $colorDarkGray;
+    padding-bottom: 1.6rem;
+    div{
+        display: flex;
+        gap: 1.6rem;
+        a{
+            font-family: $fontPoppins;
+            font-size: 1.6rem;
+            font-weight: 200;
+            color: $colorWhite;
+            text-decoration: none;
+            position: relative;
+
+            &::before{
+                content: "";
+                border: 1px solid $colorPurple;
+                width: 0%;
+                opacity: 0;
+                display: block;
+                
+                position: absolute;
+                bottom: 0;
+
+                transition: all 300ms;
+            }
+
+            &:hover{
+                background-color: transparent;
+                &::before{
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    span{
+        font-family: $fontPoppins;
+        font-size: 1.6rem;
+        font-weight: 200;
+        color: $colorGray;
+    }
+}
+
+@media(min-width:860px){
+    .backfoot{
+        div{
+            a{
+                font-size: 2.4rem;
+            }
+        }
+
+        span{
+            font-size: 2rem;
+        }   
+    }
+}
+
+@media(min-width:1110px){
+    .backfoot{
+        padding: 0 12.8rem;
+        padding-bottom: 1.6rem;
+    }
+}

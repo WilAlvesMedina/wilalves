@@ -1,0 +1,47 @@
+@import "../abstract/variables";
+
+.contatos{
+    padding: 0 3.2rem;
+    background-color: $colorDarkGray;
+    .title{
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+        padding: 1.6rem 0;
+        h5{
+            font-family: $fontIBM;
+            font-weight: 200;
+            font-size: 2.4rem;
+            color: $colorPurple;
+        }
+    
+        span{
+            display: block;
+            width: 100%;
+            border: 1px solid $colorPurple;
+        }
+    }
+
+    h3{
+        font-family: $fontIBM;
+        font-weight: 400;
+        font-size: 2.4rem;
+        color: $colorWhite;
+        padding-bottom: 14rem;
+
+        a{
+            text-decoration: none;
+            color: $colorPurple;
+
+            &:hover{
+                text-decoration:underline;
+            }
+        }
+    }
+}
+
+@media(min-width:1110px){
+    .contatos{
+        padding: 0 12.8rem;
+    }
+}

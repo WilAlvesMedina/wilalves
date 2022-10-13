@@ -1,0 +1,111 @@
+@import "../abstract/variables";
+
+.projetos{
+    padding: 0 3.2rem;
+    background-color: $colorDarkGray;
+    .title{
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+        padding: 1.6rem 0;
+        h5{
+            font-family: $fontIBM;
+            font-weight: 200;
+            font-size: 2.4rem;
+            color: $colorPurple;
+        }
+    
+        span{
+            display: block;
+            width: 100%;
+            border: 1px solid $colorPurple;
+        }
+    }
+
+    h3{
+        font-family: $fontIBM;
+        font-weight: 400;
+        font-size: 2.4rem;
+        color: $colorWhite;
+    }
+
+    .cards{
+        padding: 9.6rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.2rem;
+        .card{
+            transition: all 300ms;
+            text-decoration: none;
+
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+            img{
+                width: 100%;
+                max-width: 600px;
+                border-radius: .8rem;
+            }
+
+            h6{
+                font-family: $fontPoppins;
+                font-weight: 200;
+                font-size: 1.6rem;
+                color: $colorGray;
+            }
+
+            h2{
+                font-family: $fontPoppins;
+                font-weight: 700;
+                font-size: 2.4rem;
+                color: $colorWhite;
+            }
+
+            &:hover{
+                transform: translateY(-1.6rem);
+                //transform: scale(1.05);
+
+                img{
+                    //box-shadow: 0px 8px 24px #9300dc88;
+                    box-shadow: 0px 8px 24px #9300dc48;
+                }
+            }
+        }
+    }
+
+    .containerVejaMais{
+        text-align: right;
+        .vejaMais{
+            font-family: $fontPoppins;
+            text-align: right;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: $colorWhite;
+            text-decoration: none;
+            position: relative;
+            transition: all 300ms;
+    
+            &:hover{
+                color: $colorPurple;
+                text-decoration: underline;
+            }
+    
+        }
+    }
+}
+
+@media(min-width:860px){
+    .projetos{
+        .cards{
+            flex-direction: row;
+            align-items: start;
+        }
+    }
+}
+
+@media(min-width:1110px){
+    .projetos{
+        padding: 0 12.8rem;
+    }
+}

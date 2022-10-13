@@ -1,0 +1,30 @@
+@import "variables.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+html{
+    font-size: 1.6rem;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: .4rem;               /* largura de toda a barra de rolagem */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: $colorDarkGray;        /* cor da área de rastreamento */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #9300dc85;    /* cor do polegar de rolagem */
+    border-radius: 0px;       /* arredondamento do polegar de rolagem */
+    /*  border: 1px solid orange;  cria preenchimento em torno do polegar de rolagem */
+  }

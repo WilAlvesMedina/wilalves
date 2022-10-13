@@ -1,0 +1,111 @@
+@import "../abstract/variables";
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+    background-image: linear-gradient(0deg, #171717 5.33%, rgba(23, 23, 23, 0.8) 45.97%, rgba(107, 48, 136, 0.8) 100%), url(../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position: top;
+
+    //style="background-image:linear-gradient(0deg, #171717 5.33%, rgba(23, 23, 23, 0.8) 45.97%, rgba(107, 48, 136, 0.8) 100%), url(assets/background.jpg) ;"
+
+    div{
+        margin-top: 6.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        align-items: center;
+        padding: 0 3.2rem;
+
+        h1{
+            font-family: $fontBayon;
+            font-size: 6.4rem;
+            color: $colorWhite;
+
+            //animation: icon-anim 1.5s ease-in-out infinite alternate;
+        }
+
+        h4{
+            font-family: $fontPoppins;
+            font-weight: 200;
+            font-size: 1.6rem;
+            color: $colorWhite;
+            margin-top: -4.2rem;
+        }
+
+        .btnPrincipal{
+            width: fit-content;
+            font-family: $fontBayon;
+            font-size: 2.4rem;
+            text-decoration: none;
+            color: $colorWhite;
+            border: 2px solid $colorPurple;
+            padding: .8rem 9.2rem;
+            border-radius: 100rem;
+            box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(1px);
+
+            transition: all 300ms;
+
+            &:hover{
+                box-shadow: 0px 8px 24px #9300dc88;
+            }
+        }
+    }
+}
+
+@media(min-width:860px){
+    .hero{
+        div{
+            padding: 0 3.2rem;
+
+            h1{
+                font-size: 9.6rem;
+            }
+
+            h4{
+                font-size: 2.4rem;
+                margin-top: -5.8rem;
+            }
+
+            .btnPrincipal{
+                font-size: 3.2rem;
+                padding: 0 9.2rem;
+            }
+        }
+    }
+}
+
+@media(min-width:1110px){
+    .hero{
+        div{
+            padding: 0 12.8rem;
+
+            h1{
+                font-size: 12.8rem;
+            }
+
+            h4{
+                font-size: 2.4rem;
+                margin-top: -8rem;
+            }
+
+            .btnPrincipal{
+                font-size: 4.8rem;
+                padding: 0 9.2rem;
+            }
+        }
+    }
+}
+
+@keyframes icon-anim{
+    to{
+        transform: translateY(-1rem);
+    }
+}
